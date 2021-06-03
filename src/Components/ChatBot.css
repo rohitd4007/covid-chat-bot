@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 450px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.chat {
+    height: 90vh;
+    background: #f1f0e8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+}
+
+.profile {
+    width: 100%;
+    background: #036055;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0px 10px;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.profile .icon {
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 32px;
+}
+
+.profile .pp {
+    display: inline-block;
+    width: 30px;
+    top: 19px;
+    position: absolute;
+}
+
+.profile h2 {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 20px;
+}
+
+.profile span {
+    color: #ccc;
+    position: absolute;
+    top: 42px;
+    left: 100px;
+    font-size: 14px;
+}
+
+.profile .vicon {
+    display: inline-block;
+    width: 25px;
+    margin-left: 10px;
+}
+
+.profile .left {
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 60px;
+    position: relative;
+}
+
+.footer input {
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 60px;
+    margin: 5px;
+    outline: none;
+    font-size: 19px;
+    padding-left: 40px;
+    padding-right: 90px;
+    border: 2px solid #ccc;
+    color: #555;
+    resize: none;
+}
+
+.footer .rec {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.footer .smile {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 12px;
+    left: 10px;
+}
+
+.their-chat {
+    margin-top: 10px;
+    padding: 20px;
+    height: 15px;
+    width: 50%;
+    background-color: #bdcfcd;
+    border-radius: 10px;
+}
+
+.chat-box {
+    flex: 1;
+    position: relative;
+    overflow: auto;
+}
+
+.my-chat {
+    max-width: 10em !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    margin-top: 10px;
+    width: fit-content;
+    /* position: absolute; */
+    right: 0;
+    padding: 20px;
+    height: fit-content;
+    max-height: auto;
+    /* margin-left: 50%; */
+    background-color: #828584;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
