@@ -1,5 +1,7 @@
 import "./ChatBot.css";
 import React, { useState } from "react";
+import data from "../Helper/data.json";
+
 const ChatBot = () => {
   const [chat, setChat] = useState([]);
   const [currentMessage, setCurrentMessage] = useState("");
@@ -13,11 +15,34 @@ const ChatBot = () => {
 
     if (event.key === "Enter") {
       setChat([...chat, message.text]);
-      if (message.text === "Hello") {
-        setResponse([...response, "hiii"]);
-      } else {
-        setResponse([...response, ""]);
-      }
+
+      data.map((msg, index) => {
+        //console.log(message.text, ":", msg.message);
+        console.log(data.keys);
+
+        if (msg.message.includes(message.text))
+          if (msg.message.includes(message.text)) {
+            // console.log(msg.response);
+
+            setResponse([...response, msg.response]);
+          }
+
+        // msg.message.includes(message.text)
+        //   ? setResponse([...response, msg.response])
+        //   : setResponse([...response, "id dont have answer ......"]);
+        // else {
+        //   setResponse([...response, "id dont have answer ......"]);
+        // }
+      });
+
+      // if (message.text === "Hello") {
+      //   setResponse([...response, "hiii"]);
+      // } else {
+      //   setResponse([
+      //     ...response,
+      //     "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      //   ]);
+      // }
       //   console.log(message);
       setCurrentMessage("");
     }
@@ -49,20 +74,15 @@ const ChatBot = () => {
 
           <div className="chat-box">
             {chat.map((data, index) => (
-              <div className="my-chat" key={index}>
-                {data}
+              <div className="chat-feed">
+                <div className="my-chat" key={index}>
+                  {data}
+                </div>
+                <div className="their-chat">{response[index]}</div>
               </div>
             ))}
-
-            {response.map((data, index) => (
-              <div className="their-chat" key={index}>
-                {data}
-              </div>
-            ))}
-            {/* <div className="their-chat">{getResponse()}</div> */}
           </div>
           <div className="footer">
-            {/* <div className="inputSection"> */}
             <input
               type="text"
               name="message"
@@ -71,8 +91,6 @@ const ChatBot = () => {
               value={currentMessage}
               onKeyDown={handleSubmit}
             />
-            {/* </div> */}
-            {/* <textarea placeholder="Type a message"></textarea> */}
             <div className="attach-cam"></div>
           </div>
         </div>

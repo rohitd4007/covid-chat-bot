@@ -116,15 +116,6 @@
     left: 10px;
 }
 
-.their-chat {
-    margin-top: 10px;
-    padding: 20px;
-    height: 15px;
-    width: 50%;
-    background-color: #bdcfcd;
-    border-radius: 10px;
-}
-
 .chat-box {
     flex: 1;
     position: relative;
@@ -132,22 +123,33 @@
 }
 
 .my-chat {
-    max-width: 10em !important;
+    max-width: 15em !important;
     white-space: normal !important;
     overflow-wrap: break-word !important;
     margin-top: 10px;
     width: fit-content;
-    /* position: absolute; */
-    right: 0;
-    padding: 20px;
     height: fit-content;
     max-height: auto;
-    /* margin-left: 50%; */
+    right: 0;
+    padding: 20px;
     background-color: #828584;
     border-radius: 10px;
     text-align: center;
     margin-left: auto;
     margin-right: 0;
+}
+
+.their-chat {
+    max-width: 15em !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    margin-top: 10px;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    max-height: auto;
+    background-color: #bdcfcd;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
