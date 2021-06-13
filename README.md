@@ -1,6 +1,6 @@
 Open [https://rohitd4007.github.io/covid-chat-bot/](https://rohitd4007.github.io/covid-chat-bot/) to view Deployed App in the browser.
 
-# Steps to Setup Project
+# Setup Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
