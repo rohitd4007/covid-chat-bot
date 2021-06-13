@@ -1,6 +1,7 @@
 import "./ChatBot.css";
-import React, { useState } from "react";
-import data from "../Helper/data.json";
+import React, { useEffect, useState } from "react";
+import logo from "../Helper/loading.gif";
+import axios from "axios";
 
 const ChatBot = () => {
   const [chat, setChat] = useState([]);
@@ -16,46 +17,36 @@ const ChatBot = () => {
     if (event.key === "Enter") {
       setChat([...chat, message.text]);
 
-      data.map((msg, index) => {
-        //console.log(message.text, ":", msg.message);
-        console.log(data.keys);
+      // const nnn = async () => {
+      //   try {
+      //     const data = await axios
+      //       .post("https://chatbot-flask-api.herokuapp.com/" + currentMessage)
+      //       .then((data) => {
+      //         console.log(data.data.data);
+      //         setResponse([...response, data.data.data]);
+      //       });
+      //
+      //   } catch (e) {
+      //     console.log(e);
+      //   }
+      // };
+      // nnn();
 
-        if (msg.message.includes(message.text))
-          if (msg.message.includes(message.text)) {
-            // console.log(msg.response);
+      axios
+        .post("https://chatbot-flask-api.herokuapp.com/" + message.text)
+        .then((data) => {
+          console.log(data.data.data);
 
-            setResponse([...response, msg.response]);
-          }
+          setResponse([...response, data.data.data]);
+        })
+        .catch((err) => console.log(err));
 
-        // msg.message.includes(message.text)
-        //   ? setResponse([...response, msg.response])
-        //   : setResponse([...response, "id dont have answer ......"]);
-        // else {
-        //   setResponse([...response, "id dont have answer ......"]);
-        // }
-      });
-
-      // if (message.text === "Hello") {
-      //   setResponse([...response, "hiii"]);
-      // } else {
-      //   setResponse([
-      //     ...response,
-      //     "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-      //   ]);
-      // }
-      //   console.log(message);
       setCurrentMessage("");
     }
   };
 
   const onTextChange = (e) => {
     setCurrentMessage(e.target.value);
-  };
-  const renderChat = () => {
-    return chat.map((data, index) => <div key={index}>{data}</div>);
-  };
-  const getResponse = () => {
-    return response.map((data, index) => <div key={index}>{data}</div>);
   };
 
   return (
@@ -65,7 +56,7 @@ const ChatBot = () => {
           <div className="header">
             <div className="profile">
               <div className="left">
-                <h2>Abc</h2>
+                <h2>Covid Bot</h2>
                 <span>online</span>
               </div>
               <div className="right"></div>
@@ -78,13 +69,33 @@ const ChatBot = () => {
                 <div className="my-chat" key={index}>
                   {data}
                 </div>
-                <div className="their-chat">{response[index]}</div>
+
+                <div className="their-chat">
+                  {console.log(response[index])}
+                  {response[index] === undefined ? (
+                    // <img
+                    //   // src="https://img.icons8.com/office/16/000000/dots-loading--v2.png"
+                    //   src={logo}
+                    //   alt="Loading ..."
+                    //   className="logo"
+                    // />
+                    <div className="loading">
+                      <label>Typing</label>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  ) : (
+                    response[index]
+                  )}
+                </div>
               </div>
             ))}
           </div>
           <div className="footer">
             <input
               type="text"
+              autocomplete="off"
               name="message"
               placeholder="Say something..."
               onChange={(e) => onTextChange(e)}
