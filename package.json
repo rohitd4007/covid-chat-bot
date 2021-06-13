@@ -1,6 +1,6 @@
 {
     "name": "first-app",
-    "homepage": "https://rohitd4007.github.io/first-app",
+    "homepage": "https://rohitd4007.github.io/covid-chat-bot",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

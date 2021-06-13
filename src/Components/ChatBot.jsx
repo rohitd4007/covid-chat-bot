@@ -71,7 +71,6 @@ const ChatBot = () => {
                 </div>
 
                 <div className="their-chat">
-                  {console.log(response[index])}
                   {response[index] === undefined ? (
                     // <img
                     //   // src="https://img.icons8.com/office/16/000000/dots-loading--v2.png"
@@ -95,12 +94,13 @@ const ChatBot = () => {
           <div className="footer">
             <input
               type="text"
-              autocomplete="off"
+              autoComplete="off"
               name="message"
               placeholder="Say something..."
               onChange={(e) => onTextChange(e)}
               value={currentMessage}
               onKeyDown={handleSubmit}
+              autoFocus={false}
             />
             <div className="attach-cam"></div>
           </div>
