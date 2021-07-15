@@ -1,30 +1,12 @@
 Open [https://rohitd4007.github.io/covid-chat-bot/](https://rohitd4007.github.io/covid-chat-bot/) to view Deployed App in the browser.
 
+### This is simple chat-bot application developed with React as frontend and Python as Backend
+### This project will give answer of queries related to covid
+
+![alt text](https://github.com/[rohitd4007]/[covid-chat-bot]/blob/[master]/image.jpg?raw=true)
+
 # Setup Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* clone the Project and add to local folder
+* Run npm install to add all dependencies
+* Run npm start to start project on localhost it will run on port 3000
