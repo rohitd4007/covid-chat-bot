@@ -5,7 +5,7 @@ Open [https://rohitd4007.github.io/covid-chat-bot/](https://rohitd4007.github.io
 ### Below are few snapshots of project 
 
 #### 1
-![alt text](https://github.com/rohitd4007/covid-chat-bot/blob/master/public/1.PNG?raw=true){:height="24px" width="48px"}
+![alt text](https://github.com/rohitd4007/covid-chat-bot/blob/master/public/1.PNG?raw=true{:height="24px" width="48px"})
 
 #### 2
 ![alt text](https://github.com/rohitd4007/covid-chat-bot/blob/master/public/2.PNG?raw=true)
