@@ -3,7 +3,7 @@ Open [https://rohitd4007.github.io/covid-chat-bot/](https://rohitd4007.github.io
 ### This is simple chat-bot application developed with React as frontend and Python as Backend
 ### This project will give answer of queries related to covid
 
-![alt text](https://github.com/[rohitd4007]/[covid-chat-bot]/blob/[master]/image.jpg?raw=true)
+![alt text](https://github.com/[rohitd4007]/[covid-chat-bot]/blob/[master]/public/1.PNG?raw=true)
 
 # Setup Project
 
