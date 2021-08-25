@@ -19,4 +19,4 @@ Open [https://rohitd4007.github.io/covid-chat-bot/](https://rohitd4007.github.io
 
 * clone the Project and add to local folder
 * Run npm install to add all dependencies
-* Run npm start to start project on localhost it will run on port 3000
+* Run npm start to start project on localhost it will run on port 3000/8000
