@@ -5,14 +5,14 @@ Open [https://rohitd4007.github.io/covid-chat-bot/](https://rohitd4007.github.io
 ### Below are few snapshots of project 
 
 #### 1
-<img src="https://github.com/rohitd4007/covid-chat-bot/blob/master/public/1.PNG" width="400">
+<img src="https://github.com/rohitd4007/covid-chat-bot/blob/master/public/1.PNG" width="399">
 
 #### 2
-<img src="https://github.com/rohitd4007/covid-chat-bot/blob/master/public/2.PNG" width="400">
+<img src="https://github.com/rohitd4007/covid-chat-bot/blob/master/public/2.PNG" width="399">
 
 
 #### 3
-<img src="https://github.com/rohitd4007/covid-chat-bot/blob/master/public/3.PNG" width="400">
+<img src="https://github.com/rohitd4007/covid-chat-bot/blob/master/public/3.PNG" width="399">
 
 
 # Setup Project
